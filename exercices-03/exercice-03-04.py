@@ -6,5 +6,5 @@
 # ATTENTION : ne pas utiliser la fonction sum()
 
 # réponse 3.4
-average = (1*2*3*5*8*13*21)/7
+average = (1 + 2 + 3 + 5 + 8 + 13 + 21) / 7
 print(average)
