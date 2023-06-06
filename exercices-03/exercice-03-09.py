@@ -18,7 +18,5 @@ weight_alpha = 120/1000
 weight_beta = 100/1000
 price_per_kilo_alpha = price_alpha / weight_alpha
 price_per_kilo_beta = price_beta / weight_beta
-if price_per_kilo_alpha < price_per_kilo_beta : 
-    print("charly a raison")
-else : 
-    print("charly n'a pas raison")    
+print(price_per_kilo_alpha < price_per_kilo_beta)
+print(price_per_kilo_alpha > price_per_kilo_beta)
