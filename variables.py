@@ -73,4 +73,34 @@ print((int(text3)))
 # bool() convertit vers un bouléen
 # float() convertit vers un nombre a virgule
 
-""
+#chaine de caractère, string : 
+#cette notation permet d'utiliser des sauts de ligne : 
+text4 = """<div>
+    <h1>Titre de premier niveau</h1>
+</div>
+"""
+
+# \n est equivalent a un saut de ligne
+# \t est equivalent a une tabulation
+text5 = "<div>\n\t<h1>Titre de premier niveau</h1>\n</div>\n"
+
+print(text4)
+print(text5)
+
+text6 = "Foo\"Bar\" Baz"
+print(text6)
+
+#permutez les deux variables a et b en utilisant l'opérateur d'affectation et le nom des variables
+a = 123
+b = 42
+
+# a = a + b
+# b = a - b
+# a = a - b
+
+c = a 
+a = b 
+b = c
+
+print(a)
+print(b)
