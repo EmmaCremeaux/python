@@ -36,7 +36,7 @@ print(f)
 
     # égalité : 
 result1 = 123 == 123
-print(result)
+print(result1)
 
 password = "abc"
 user_input = "def"
@@ -56,7 +56,38 @@ print(result4)
 
     # Différent de : 
 result5 = 123 != 123
-print(result)
+print(result5)
+
+    # opérateurs composés
+b = 0
+
+    # opérateur d'incrémentation
+    # b = b + 1
+b += 1
+print(b)
+
+    # b = b - 1
+b -= 1
+print(b)
+
+    # Multiplication 
+c = 3
+    # c = c * 2
+c *= 2
+print(c)
+
+    # Division
+d = 10
+    # d = d / 3
+d /= 3 
+print(d)
+    
+    # Division entiere 
+d = 10
+    # d = d // 3
+d //= 3 
+print(d)
+
 
 
 
