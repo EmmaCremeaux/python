@@ -1,3 +1,5 @@
+import random 
+
 # Arithmétique :
 a = 123 + 42
 b = 123 - 42
@@ -88,7 +90,33 @@ d = 10
 d //= 3 
 print(d)
 
+    # Opérateur d'inclusion
+text1 = "Lorem ipsum"
 
+result = "e" in text1 # prend en compte les majuscules
+print(result)
 
+list1 = ['Lorem', 'ipsum']
+print("e" in list1) # ici c'est False car in cherche si "e" est dans la liste d'element et non si il fait parti d'un mot de la liste
+print ('ipsum' in list1)
 
+    # Comparaison avec des nombres aléatoires
+e = random.randint(0, 100)
+f = random.randint(0, 100)
+print(f'{e = }')
+print(f'{f = }')
 
+result = e == f
+print(result)
+
+result = e < f
+print(result)
+
+    # Est une expression
+        # 1 + 1 -> 2 
+        # (100 + 2) * 3 -> 102 + 3 -> 306
+        # 1 + 1 > (100 + 2) * 3 -> False
+        # random.randint(0, 100) 
+        
+    # Pas une expression    
+        # print(100) 
