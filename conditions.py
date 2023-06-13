@@ -109,3 +109,111 @@ print(f'{age = }')
 
 if age >= 12 and age <= 25 :
     print("l'age est compris entre 12 et 25 ans")
+
+
+            # OU exclusif (XOR) :
+print(True ^ True)
+print(True ^ False)
+print(False ^ True)
+print(False ^ False)
+
+# Table de vérité de l'opérateur XOR :
+    #     A                   B                A Xor B              
+    #   True                True        =>      False                
+    #   True                False       =>      True               
+    #   False               True        =>      True               
+    #   False               False       =>      False               
+
+
+
+
+
+# Exo course (opérateur OU logique)
+# Affichez : 
+# je peux aller faire les courses si on a au moins un moyen de paiement.
+# je ne peux pas si j'ai pas de moyen de paiement
+
+has_cash = bool(random.randint(0, 1))
+has_cb = bool(random.randint(0, 1))
+
+print(f'{has_cash = }')
+print(f'{has_cb = }')
+
+if has_cash or has_cb:
+    print("je peux allez faire mes courses")
+else :
+    print("je ne peux pas allez faire mes courses")
+
+
+# Exo course (opérateur ET logique)
+# Affichez : 
+# je peux aller faire les courses si on a au moins un moyen de paiement.
+# je ne peux pas si j'ai pas de moyen de paiement
+
+has_cash = bool(random.randint(0, 1))
+has_cb = bool(random.randint(0, 1))
+
+print(f'{has_cash = }')
+print(f'{has_cb = }')
+
+if not has_cash and not has_cb :
+    print("je ne peux pas allez faire mes courses")
+else :
+    print("je peux allez faire mes courses")
+
+
+
+# Exo combinaison d'opérateur AND et OR :
+
+has_score = bool(random.randint(0, 1))
+has_level = bool(random.randint(0, 1))
+has_vip = bool(random.randint(0, 1))
+
+print(has_level)
+print(has_score)
+print(has_vip)
+
+if (has_score and has_level) or has_vip : # Mettre les parenthèses aidera à empêcher les bugs
+    print("tu peux avoir ton armure")
+else :
+    print("tu ne peux pas avoir ton armure")
+
+
+
+# Exo carte de réduction
+# Déterminez la carte de réduction auquelle le voyageur a droit : 
+    # - entre 0 et 11 ans (inclus), gratuit
+    # - entre 12 et 25 ans (inclus), reduc 50%
+    # - entre 26 et 64 ans (inclus), reduc 10%
+    # - au dela de 65 ans (inclus), reduc 50%
+
+age = random.randint(0, 99)
+print(age)
+
+if 12 <= age <= 25 or age >= 65 : 
+    print("reduc 50%")
+elif 0 <= age <= 11 :
+    print("gratuit")
+else : 
+    print("reduc 10%")
+
+# Ou methode plus facilement changeable : 
+
+if 12 <= age <= 25 : 
+    print("reduc 50%")
+elif age >= 65 : 
+    print("reduc 50%")
+elif 0 <= age <= 11 :
+    print("gratuit")
+else : 
+    print("reduc 10%")
+
+
+
+
+
+
+
+
+
+
