@@ -207,13 +207,3 @@ elif 0 <= age <= 11 :
     print("gratuit")
 else : 
     print("reduc 10%")
-
-
-
-
-
-
-
-
-
-

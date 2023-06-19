@@ -7,4 +7,8 @@
 my_list = [2.71, 42]
 
 # réponse 6.8
+somme = 0
 
+for number in range(len(my_list)) : 
+    somme += my_list[number]
+print(somme)

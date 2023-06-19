@@ -16,4 +16,9 @@ for _ in range(0, size):
 print(matrix)
 
 # réponse 6.18
+index = size - 1
+for i in range(0, index):
+    for j in range(0, index):
+        if matrix[i][j] <= 50 :
+            print (f'la valeur est {matrix[i][j]} a la ligne {i + 1} et a la colonne {j + 1}')
 
