@@ -6,3 +6,8 @@ import random
 
 # réponse 7.6
 
+for dice in range(1, 101):
+    r = random.randint(1, 10)
+    print(r)
+    if r == 1 or r == 10 : 
+        print(f'r est egal à {r}')

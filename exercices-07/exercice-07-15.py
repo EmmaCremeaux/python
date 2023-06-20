@@ -2,4 +2,6 @@
 # en utilisant une boucle for, affichez tous les nombres divisibles par 3, de 2 à 99 inclus
 
 # réponse 7.15
-
+for dice in range(2, 100):
+    if dice%3 == 0 :
+        print(dice)

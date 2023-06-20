@@ -6,4 +6,15 @@
 import random
 
 # réponse 7.8
+count = 0
+for dice in range(1, 101):
+    r = random.randint(1, 10)
+    print(r)
+    if r == 7 :
+        count += 1
+print(f'il y a {count} fois 7')
 
+
+
+    
+    

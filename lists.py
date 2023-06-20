@@ -55,6 +55,8 @@ print(users)
 
 
 
+
+
 fruits = ['ananas', 'banane', 'cerise']
 legumes = ['artichaud', 'brocoli', 'carotte']
 ingredients = fruits + legumes
@@ -68,3 +70,22 @@ print(fruits)
 letters = ['g', 'd', 'a', 'c', 'b', 'Z']     # les majuscules sont toujours avant les minuscules
 letters = sorted(letters)                    # CF tableau ascii (IMPORTANT)
 print(letters)
+
+
+# liste en 2D
+players = [
+    [42000, 46400, 32103],
+    [16700, 44667, 57987]
+]
+
+line = 0
+col = 0
+print(players[line][col]) 
+
+for line_index in range(0, len(players)):
+    line = players[line_index]
+
+    for col_index in range(0, len(line)):
+        score = line[col_index]
+
+        print(score)

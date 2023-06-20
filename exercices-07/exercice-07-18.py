@@ -5,4 +5,11 @@
 import random
 
 # réponse 7.18
+r = random.randint(1, 100)
+print(r)
+while r != 100 :
+    r = random.randint(1, 100)
+    print(r)
+    if r == 100 :
+        print(f'{r} a été tiré !')
 

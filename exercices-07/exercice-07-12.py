@@ -6,4 +6,11 @@
 import random
 
 # réponse 7.12
+count = 0
+for dice in range(1, 101):
+    r = random.randint(1, 10)
+    print(r)
+    if 2 <= r or r >= 9 :
+        count += 1
+print(f'il y a {count} fois r entre 2 et 9')
 

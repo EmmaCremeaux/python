@@ -5,4 +5,8 @@
 import random
 
 # réponse 7.4
-
+for dice in range(1, 101):
+    r = random.randint(1, 10)
+    print(r)
+    if r <= 5 : 
+        print(f'r est egal à {r}')
