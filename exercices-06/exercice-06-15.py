@@ -8,29 +8,24 @@
 my_list = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit']
 
 # réponse 6.15
-print(my_list)
-new_list = []
-for text in range(len(my_list)) :
-    new_list = new_list + [len(my_list[text])]
-print(new_list)
 
-max_value = None
-for number in range(len(new_list)) :
-    if (max_value is None or number >= max_value):
-        max_value = new_list[number]
-        index = number
-my_list = my_list[index]
+# print(my_list)
+# new_list = []
+# for text in range(len(my_list)) :
+#     new_list = new_list + [len(my_list[text])]
+# print(new_list)
+
+# max_value = None
+# for number in range(len(new_list)) :
+#     if (max_value is None or number >= max_value):
+#         max_value = new_list[number]
+#         index = number
+# my_list = my_list[index]
         
-print('longueur la plus grande :', max_value)
-print('index :', index)
-print('valeur :', my_list)
+# print('longueur la plus grande :', max_value)
+# print('index :', index)
+# print('valeur :', my_list)
 
 
-    
-
-  
-        
-
-    
     
     

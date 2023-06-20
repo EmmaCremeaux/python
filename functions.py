@@ -44,3 +44,15 @@ def reverse_lookup(my_list, value):
 
 resultat = reverse_lookup(my_list, 3.14) 
 print(resultat)
+
+
+# type hinting : ne sert qu'a indiquer le type souhaité
+# le nom de la fonction + ses paramètres + son type de retour = signature de la fonction
+def mult(a: int, b: int) -> int:
+    return a * b
+
+result = mult(2, 5)
+print(result)
+
+# mais les autres type de donnée passent quand même : 
+# result = mult('abc', 5)

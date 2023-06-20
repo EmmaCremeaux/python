@@ -7,3 +7,8 @@
 
 # réponse 10.1
 
+def my_sum(a, b):
+    return a + b
+
+resultat = my_sum(13, 20)
+print(resultat)

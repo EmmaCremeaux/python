@@ -8,4 +8,10 @@
 # Appelez la fonction avec la valeur False et affichez le résultat
 
 # réponse 10.3
-
+def oui_non(value) -> bool:
+    if value:
+        return 'oui'
+    else: 
+        return 'non'
+print(oui_non(True))
+print(oui_non(False))
