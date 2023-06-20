@@ -14,4 +14,5 @@ my_dict = {
 }
 
 # réponse 9.8
-
+for key in my_dict:
+    print(f'value: {my_dict[key]}')

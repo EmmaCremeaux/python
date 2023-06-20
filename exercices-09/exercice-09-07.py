@@ -14,4 +14,6 @@ my_dict = {
 }
 
 # réponse 9.7
-
+for key, value in my_dict.items():
+    print(f'{key = }')
+    print(f'{value = }')

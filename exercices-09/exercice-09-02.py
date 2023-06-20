@@ -8,3 +8,10 @@
 
 # réponse 9.2
 
+my_dict = {
+    True: 13,
+    False: 9.3,
+    13: 'bouh',
+    'd': True,
+}
+print(my_dict)

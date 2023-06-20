@@ -10,4 +10,5 @@ my_dict = {
 }
 
 # réponse 9.5
-
+del my_dict['foo']
+print(my_dict)
