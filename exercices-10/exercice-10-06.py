@@ -20,3 +20,5 @@
 # Appelez les fonctions et affichez les résultats
 
 # réponse 10.6
+miles = meters / 1609.344
+meters = miles * 1609.344

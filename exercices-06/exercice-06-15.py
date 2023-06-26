@@ -8,24 +8,16 @@
 my_list = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit']
 
 # réponse 6.15
+longueur = 0
+valeur = ''
+index = None
 
-# print(my_list)
-# new_list = []
-# for text in range(len(my_list)) :
-#     new_list = new_list + [len(my_list[text])]
-# print(new_list)
-
-# max_value = None
-# for number in range(len(new_list)) :
-#     if (max_value is None or number >= max_value):
-#         max_value = new_list[number]
-#         index = number
-# my_list = my_list[index]
-        
-# print('longueur la plus grande :', max_value)
-# print('index :', index)
-# print('valeur :', my_list)
-
+for number in range(len(my_list)) :
+    if (len(my_list[number]) > longueur): 
+        longueur = len(my_list[number])
+        valeur = my_list[number]
+        index = number
+print (f'le mot le plus long est "{valeur}" est à l\'index {index} et a une longueur de {longueur}.')
 
     
     
