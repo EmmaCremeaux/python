@@ -11,4 +11,9 @@ import random
 head_or_tail = random.randint(0, 1)
 
 # réponse 1.1
+print(head_or_tail)
+if head_or_tail == 0 : 
+    print(f'félicitation Alice, tu as gagné')
+else : 
+    print(f'félicitation Bob, tu as gagné')
 

@@ -10,3 +10,8 @@ dice = random.randint(1, 6)
 
 # réponse 1.2
 
+print(dice)
+if dice >= 4 : 
+    print(f'félicitation Alice, tu as gagné')
+elif dice <= 3 : 
+    print(f'félicitation Bob, tu as gagné')
