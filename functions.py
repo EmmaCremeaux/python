@@ -56,3 +56,62 @@ print(result)
 
 # mais les autres type de donnée passent quand même : 
 # result = mult('abc', 5)
+
+# Copie d'une fonction comme si c'etait une fonction
+mult_copy = mult
+mult_copy(2, 5)
+
+
+# Stockage de fonction dans une liste : 
+operations = []
+operations.append(addition)
+operations.append(mult)
+
+a = 2
+b = 5
+result = None
+
+for operation in operations : 
+    result = operation(a, b)
+    print(result)
+
+
+# fonction de degré supérieur :
+# fonction qui accepte une autre fonction en paramètre 
+# ou qui renvoie une fonction.
+def operateur_binaire(a, b, fonction):
+    return fonction(a, b)
+
+# Appel de la fonction de degré superieur
+resultat = operateur_binaire(2, 5, mult)
+print(resultat)
+
+
+my_list = ['foo', 'ispum']
+text = 'toto'
+
+print(len(my_list))
+print(len(text))
+
+def my_len(value):
+    return 42
+
+# Sauvegarde de la fonction len() originale
+len_copy = len
+
+# Surcharge de la fonction len() originale 
+# = remplacement par une autre fonction 
+len = my_len
+
+print(len(my_list))
+print(len(text))
+
+# Restauration de la fonction len() originale
+len = len_copy
+
+
+# pass permet d'ecrire du code python syntaxiquement valide
+# même quand on a pas encore le corp du if ou d'une boucle
+if True : 
+    pass
+

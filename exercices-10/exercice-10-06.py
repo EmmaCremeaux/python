@@ -20,5 +20,13 @@
 # Appelez les fonctions et affichez les résultats
 
 # réponse 10.6
-miles = meters / 1609.344
-meters = miles * 1609.344
+
+def meters_to_miles(a):
+    miles = a / 1609.344
+    return miles
+print(meters_to_miles(1000))
+
+def miles_to_meters(b):
+    meters = b * 1609.344
+    return meters
+print(miles_to_meters(10))
