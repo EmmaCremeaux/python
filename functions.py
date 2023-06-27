@@ -1,4 +1,4 @@
-import library
+import library # import d'un fichier qu'on a créer et qui contient une fonction qu'on veux réutilisé ici.
 
 # définition : 
 def hello():
@@ -76,13 +76,13 @@ for operation in operations :
     print(result)
 
 
-# fonction de degré supérieur :
+# fonction d'ordre supérieur :
 # fonction qui accepte une autre fonction en paramètre 
 # ou qui renvoie une fonction.
 def operateur_binaire(a, b, fonction):
     return fonction(a, b)
 
-# Appel de la fonction de degré superieur
+# Appel de la fonction d'ordre superieur
 resultat = operateur_binaire(2, 5, mult)
 print(resultat)
 
